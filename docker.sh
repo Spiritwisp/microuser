@@ -6,4 +6,4 @@ docker build -t spiritwisp/microuser . &&
 
 docker rm -f microuser || true &&
 
-docker run -d --name microuser -p 8080:8000 spiritwisp/microuser
+docker run -p 8085:8000 spiritwisp/microuser
