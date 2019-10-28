@@ -17,8 +17,6 @@ public class DataConfig {
     public DataSource dataSource() {
         return new EmbeddedDatabaseBuilder()
                 .setType(EmbeddedDatabaseType.H2)
-                .addScript("script/schema.sql")
-                .addScript("script/test-data.sql")
                 .setName("devdb;MODE=MySQL;DB_CLOSE_ON_EXIT=false")
                 .build();
     }
