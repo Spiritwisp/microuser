@@ -1,4 +1,4 @@
-FROM classmethod/openjdk-alpine-git
+FROM openjdk
 
 COPY ./build/libs/microuser-1.0-SNAPSHOT.jar /usr/app/
 WORKDIR /usr/app
